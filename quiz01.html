@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <title>Firmvorbeireitungsrätsel</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+        <!-- FontAwesome CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+        <!-- Custom CSS -->
+        <style type="text/css">
+        
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Rätsel</h1>
+                    <p>
+                        Knackt ihr gemeinsam die folgenden Fragen zur Firmung, bekommt ihr ein weiteres Lösungswort!
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <form>
+                        <div class="form-group row">
+                            <label for="question-1" class="col-12 col-form-label">Wie viele Gaben schenkt der Heilige Geist?</label>
+                            <div class="col-12">
+                                <input id="question-1" class="question form-control" type="number" min="0" max="20" value="" placeholder="Gib hier die genaue Anzahl ein!" data-result="7">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group row">
+                            <label for="question-2" class="col-12 col-form-label">Wer ist der Firmspender oder ernennt diese? (7 Buchstaben)</label>
+                            <div class="col-12">
+                                <input id="question-2" class="question form-control" type="text" placeholder="_ _ _ _ _ _ _" data-result="bischof">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group row">
+                            <label for="question-3" class="col-12 col-form-label">Finde eine Gabe des Heiligen Geistes!</label>
+                            <div class="col-12">
+                                <select id="question-3" class="question form-control" data-result="froemmigkeit">
+                                    <option selected="selected">Wähle die richtige Gabe...</option>
+                                    <option value="liebe">Liebe</option>
+                                    <option value="barmherzigkeit">Barmherzigkeit</option>
+                                    <option value="froemmigkeit">Frömmigkeit</option>
+                                    <option value="agilität">Agilität</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group row">
+                            <label for="question-4" class="col-12 col-form-label">Wie heißt das Fest bei dem wir die Ankunft des Heiligen Geistes feiern? (9 Buchstaben)</label>
+                            <div class="col-12">
+                                <input id="question-4" class="question form-control" type="text" placeholder="_ _ _ _ _ _ _ _ _" data-result="pfingsten">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group row">
+                            <label for="question-5" class="col-12 col-form-label">Was ist ein Symbol für den Heiligen Geist?</label>
+                            <div class="col-12">
+                                <select id="question-5" class="question form-control" data-result="taube">
+                                    <option selected="selected">Wähle den richtigen Vogel...</option>
+                                    <option value="schwan">Schwan</option>
+                                    <option value="falke">Falke</option>
+                                    <option value="spatz">Spatz</option>
+                                    <option value="taube">Taube</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group row">
+                            <label for="question-6" class="col-12 col-form-label">Wie lauten die beiden Hauptgebote?</label>
+                            <div class="col-12">
+                                <select id="question-6" class="question form-control" data-result="1">
+                                    <option selected="selected">Wähle die richtige Antwort...</option>
+                                    <option value="1">Gottes- und Nächstenliebe</option>
+                                    <option value="2">Nicht lügen und nicht stehlen</option>
+                                    <option value="3">Erstkommunion und Firmung</option>
+                                    <option value="4">Vater und Mutter ehren</option>
+                                    <option value="5">Heiraten und Kinder bekommen</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group row">
+                            <label for="question-7" class="col-12 col-form-label">Wie heißt der Pfarrer der Pfarre Kirchdorf? Pater .... (7 Buchstaben)</label>
+                            <div class="col-12">
+                                <input id="question-7" class="question form-control" type="text" placeholder="_ _ _ _ _ _ _" data-result="severin">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group row">
+                            <label for="question-8" class="col-12 col-form-label">Wo wuchs Jesus auf? (7 Buchstaben)</label>
+                            <div class="col-12">
+                                <input id="question-8" class="question form-control" type="text" placeholder="_ _ _ _ _ _ _" data-result="nazaret">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group row">
+                            <div class="col-12">
+                                <button id="check-button" class="btn btn-primary"><i class="fa fa-check"></i> Antworten überprüfen</button>
+                            </div>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                var button = $('#check-button');
+                
+                button.click(function(e){
+                    e.preventDefault();
+                    
+                    var success = true;
+                    $('.question').each(function() {
+                        var element = $(this);
+                        if( element.val().toLowerCase().trim() != element.data('result') )
+                        {
+                            success = false;
+                            element.addClass('form-control-danger');
+                            element.removeClass('form-control-success');
+                            element.parent().parent('.form-group').addClass('has-danger');
+                            element.parent().parent('.form-group').removeClass('has-success');
+                        }
+                        else
+                        {
+                            element.addClass('form-control-success');
+                            element.removeClass('form-control-danger');
+                            element.parent().parent('.form-group').addClass('has-success');
+                            element.parent().parent('.form-group').removeClass('has-danger');
+                        }
+                    });
+                    
+                    if( success )
+                    {
+                        alert('Super!! Das neue Wort für den Lösungssatz ist "DU".');
+                    }
+                    
+                });
+            });
+        </script>
+    </body>
+</html>
